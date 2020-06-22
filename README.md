@@ -1,7 +1,7 @@
 # visa-dump
 
 ## ℹ️ Overview
-The US Department of Labor publish working visa petitions on their website. However, the files are published as indivisual xlsx files. It is difficult to download all the files and process the data. This repo tackles this issue by sharing python scripts to download all data files and converting them to the desired file format. The packaged OFLC Performance data is also downloadable in JSON, CSV, and XLSX. Check the Data section to download files.
+The US Department of Labor, Office of Foreign Labor Certification publishes working visa petitions on their [website](https://www.foreignlaborcert.doleta.gov/). However, the files are published as indivisual xlsx files. It is difficult to download all the files and process the data. This repo tackles this issue by sharing python scripts to download all data files and converting them to the desired file format and also sharing the converted files nicely packaged. The packaged OFLC Performance data is downloadable in JSON, CSV, and XLSX. Check the Data section to download files.
 
 The dump was generated on June 21, 2020. 
 
@@ -62,3 +62,6 @@ Due to the size of the files, the dataset is hosted via [Internet Archive](https
 
 ## 🏃‍♀️ Running scripts
 Run the `download.py` python script which will download all `.xlsx` files found on the DOL homepage and download them to the `data/xlsx` location. Run the `transform.py` python script to transform the downloaded files to JSON or CSV formats. 
+
+## 🧑‍💻 Projects Using Data Dump
+- [Visatopia](https://visatopia.fyi/) - Search millions of work visa application history. 
